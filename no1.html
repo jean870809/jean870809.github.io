@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="no1.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+    <script src="no1.js"></script>
+    <script src="data.json"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox1" value="MMM" onclick="myFunction()" />
+                <label for="myCheckbox1"><img src="img/3m_MMM.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox2" value="AXP" onclick="myFunction()" />
+                <label for="myCheckbox2"><img src="img/american-express_AXP.png"
+                        style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox3" value="AAPL" onclick="myFunction()" />
+                <label for="myCheckbox3"><img src="img/apple_AAPL.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox4" value="BA" onclick="myFunction()" />
+                <label for="myCheckbox4"><img src="img/boeing_BA.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox5" value="CAT" onclick="myFunction()" />
+                <label for="myCheckbox5"><img src="img/caterpillar_CAT.png" style="height: 30px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox6" value="CVX" onclick="myFunction()" />
+                <label for="myCheckbox6"><img src="img/chevron_CVX.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox7" value="CSCO" onclick="myFunction()" />
+                <label for="myCheckbox7"><img src="img/cisco_CSCO.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox8" value="KO" onclick="myFunction()" />
+                <label for="myCheckbox8"><img src="img/coca-cola_KO.png" style="height: 30px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox9" value="DIS" onclick="myFunction()" />
+                <label for="myCheckbox9"><img src="img/disney_DIS.png" style="height: 50px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox10" value="DD" onclick="myFunction()" />
+                <label for="myCheckbox10"><img src="img/dow_DOW.png" style="height: 50px; width: 80px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox11" value="XOM" onclick="myFunction()" />
+                <label for="myCheckbox11"><img src="img/exxon-mobil_XOM.png" style="height: 30px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox12" value="GS" onclick="myFunction()" />
+                <label for="myCheckbox12"><img src="img/goldman-sachs_GS.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox13" value="HD" onclick="myFunction()" />
+                <label for="myCheckbox13"><img src="img/home-depot_HD.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox14" value="IBM" onclick="myFunction()" />
+                <label for="myCheckbox14"><img src="img/ibm_IBM.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox15" value="INTC" onclick="myFunction()" />
+                <label for="myCheckbox15"><img src="img/intel_INTC.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox16" value="JNJ" onclick="myFunction()" />
+                <label for="myCheckbox16"><img src="img/johnson-johnson_JNJ.png"
+                        style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox17" value="JPM" onclick="myFunction()" />
+                <label for="myCheckbox17"><img src="img/jpmorgan-chaseJPM.png"
+                        style="height: 30px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox18" value="MCD" onclick="myFunction()" />
+                <label for="myCheckbox18"><img src="img/mcdonald_MCD.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox19" value="MRK" onclick="myFunction()" />
+                <label for="myCheckbox19"><img src="img/merck_MRK.png" style="height: 50px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox20" value="MSFT" onclick="myFunction()" />
+                <label for="myCheckbox20"><img src="img/microsoft_MSFT.png" style="height: 30px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox21" value="NKE" onclick="myFunction()" />
+                <label for="myCheckbox21"><img src="img/nike_NKE.png" style="height: 50px; width: 80px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox22" value="PFE" onclick="myFunction()" />
+                <label for="myCheckbox22"><img src="img/pfizer_PFE.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox23" value="PG" onclick="myFunction()" />
+                <label for="myCheckbox23"><img src="img/procter-gamble_PG.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox24" value="UTX" onclick="myFunction()" />
+                <label for="myCheckbox24"><img src="img/raytheon-technologies_RTX.png"
+                        style="height: 50px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox25" value="TRV" onclick="myFunction()" />
+                <label for="myCheckbox25"><img src="img/travelers_TRV.png" style="height: 30px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox26" value="UNH" onclick="myFunction()" />
+                <label for="myCheckbox26"><img src="img/unitedhealth_UNH.png" style="height: 30px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox27" value="VZ" onclick="myFunction()" />
+                <label for="myCheckbox27"><img src="img/verizon_VZ.png" style="height: 50px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox28" value="V" onclick="myFunction()" />
+                <label for="myCheckbox28"><img src="img/visa_V.png" style="height: 30px; width: 50px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox29" value="WMT" onclick="myFunction()" />
+                <label for="myCheckbox29"><img src="img/wal-mart_WMT.png" style="height: 30px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="checkbox" name="myCheckBox" id="myCheckbox30" value="WBA" onclick="myFunction()" />
+                <label for="myCheckbox30"><img src="img/walgreens_WBA.png" style="height: 30px; width: 100px;" /></label>
+            </li>
+            <li>
+                <input type="button" name="all" onclick="check_all(this,'myCheckBox')" value="全選"
+                    style="height: 30px; width: 100px;" /></li>
+            <li>
+                <input type="button" name="clear" onclick="clear_all(this,'myCheckBox')" value="清除"
+                    style="height: 30px; width: 100px;" /></li>
+        </ul>
+
+    </div>
+    <div class="main">
+        <div id="tab-demo">
+            <ul class="tab-title">
+                <li><a href="#tab01">股價</a></li>
+                <li><a href="#tab02">資金水位</a></li>
+            </ul>
+            <div id="tab01" class="tab-inner">
+                <canvas id="myChart" width="300px" height="200px"></canvas>
+            </div>
+            <div id="tab02" class="tab-inner">
+                <canvas id="myChart1" width="300px" height="200px"></canvas>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
